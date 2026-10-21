@@ -6,6 +6,22 @@ Too many Claude tasks running, and some get left behind. Critter Crew puts every
 
 [![Critter Crew demo](docs/critter-crew.jpg)](docs/critter-crew.mp4)
 
+## Download
+
+**[Download Critter Crew for Mac](https://github.com/dogstairsau/critter-crew/releases/latest/download/CritterCrew.zip)** (macOS 14 or later, Apple silicon and Intel)
+
+1. Unzip it and drag **Critter Crew** into your Applications folder.
+2. Open it. macOS will say it can't check the app for malware, because it isn't notarised by Apple yet. Click **Done**.
+3. Go to **System Settings → Privacy & Security**, scroll down, and click **Open Anyway** next to Critter Crew.
+
+Prefer Terminal? This does the same as step 3:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/Critter Crew.app"
+```
+
+You'll need Claude Code running, either in the Claude desktop app or the `claude` CLI.
+
 ## What the critters tell you
 
 | Critter | Means |
@@ -23,7 +39,7 @@ Every project gets its own critter (hard hat, shades, antenna, nightcap and more
 - **The minus button** tucks it back into the notch.
 - **Right-click** the island to mark everything as seen, pick critters, or quit.
 
-## Install
+## Build it yourself
 
 You'll need a Mac on macOS 14 or later (a notch MacBook looks best, but it works on any screen) and Xcode or the Xcode command line tools (`xcode-select --install`).
 
